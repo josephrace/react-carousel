@@ -9625,14 +9625,14 @@ var Examples = function (_Component) {
               animateIn: extraAnimations[chosenAnimation].in,
               animateOut: extraAnimations[chosenAnimation].out
             },
-            _react2.default.createElement('img', { 'data-src': _img8.default, alt: '' }),
-            _react2.default.createElement('img', { 'data-src': _img10.default, alt: '' }),
-            _react2.default.createElement('img', { 'data-src': _img12.default, alt: '' })
+            _react2.default.createElement('img', { src: _img2.default, alt: '' }),
+            _react2.default.createElement('img', { src: _img4.default, alt: '' }),
+            _react2.default.createElement('img', { src: _img6.default, alt: '' })
           ),
           _react2.default.createElement(
             'pre',
             { className: 'example-code' },
-            '\n            <Carousel\n              animateIn=\'' + extraAnimations[chosenAnimation].in + '\'\n              animateOut=\'' + extraAnimations[chosenAnimation].out + '\'\n            >\n              <img data-src={img4} alt="" />\n              <img data-src={img5} alt="" />\n              <img data-src={img6} alt="" />\n            </Carousel>\n          '
+            '\n            <Carousel\n              animateIn=\'' + extraAnimations[chosenAnimation].in + '\'\n              animateOut=\'' + extraAnimations[chosenAnimation].out + '\'\n            >\n              <img src={img1} alt="" />\n              <img src={img2} alt="" />\n              <img src={img3} alt="" />\n            </Carousel>\n          '
           )
         ),
         _react2.default.createElement(

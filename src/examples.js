@@ -142,18 +142,18 @@ class Examples extends Component {
             animateIn={extraAnimations[chosenAnimation].in}
             animateOut={extraAnimations[chosenAnimation].out}
           >
-            <img data-src={img4} alt="" />
-            <img data-src={img5} alt="" />
-            <img data-src={img6} alt="" />
+            <img src={img1} alt="" />
+            <img src={img2} alt="" />
+            <img src={img3} alt="" />
           </Carousel>
           <pre className="example-code">{`
             <Carousel
               animateIn='${extraAnimations[chosenAnimation].in}'
               animateOut='${extraAnimations[chosenAnimation].out}'
             >
-              <img data-src={img4} alt="" />
-              <img data-src={img5} alt="" />
-              <img data-src={img6} alt="" />
+              <img src={img1} alt="" />
+              <img src={img2} alt="" />
+              <img src={img3} alt="" />
             </Carousel>
           `}</pre>
         </div>
