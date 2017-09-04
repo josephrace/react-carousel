@@ -1,0 +1,43 @@
+/* Basic styles for examples page */
+
+$font-family-primary: 'Roboto', sans-serif;
+$font-family-code: 'Roboto Mono', monospace;
+$base-font-size: 16px;
+$container-width: 800px;
+
+body {
+  font-family: $font-family-primary;
+  font-size: $base-font-size;
+  line-height: 1.4;
+  color: #111111;
+}
+
+pre {
+  font-family: $font-family-code;
+  font-size: 0.8rem;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.example-section {
+  margin-bottom: 3rem;
+}
+
+.example-code {
+  margin-top: 2rem;
+}
+
+.page-header {
+  margin: 0 0 2rem;
+}
+
+.page-footer {
+  border-top: 1px solid #666666;
+  padding-top: 2rem;
+  margin: 2rem 0;
+}

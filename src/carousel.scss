@@ -1,0 +1,153 @@
+.carousel {
+  position: relative;
+}
+
+.carousel-slides {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+
+  &--active,
+  &--next {
+    display: block;
+  }
+
+  &--active {
+    z-index: 1;
+  }
+
+  &--next {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+
+  &.fadeIn {
+    animation-name: fadeIn;
+  }
+
+  &.fadeOut {
+    animation-name: fadeOut;
+  }
+
+  &.slideInRight {
+    animation-name: slideInRight;
+  }
+
+  &.slideInLeft {
+    animation-name: slideInLeft;
+  }
+
+  &.slideOutLeft {
+    animation-name: slideOutLeft;
+  }
+
+  &.slideOutRight {
+    animation-name: slideOutRight;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.carousel-nav__item {
+  cursor: pointer;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.carousel-dots__item {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  cursor: pointer;
+
+  &--active {
+    background-color: #999999;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
