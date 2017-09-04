@@ -173,7 +173,9 @@ class Examples extends Component {
               prevText: 'Prev',
               autoplay: true,
               nav: true,
-              dots: false
+              dots: false,
+              beforeChange: () => {},
+              afterChange: () => {}
             }
           `}</pre>
         </div>

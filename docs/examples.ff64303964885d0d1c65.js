@@ -9651,7 +9651,7 @@ var Examples = function (_Component) {
           _react2.default.createElement(
             'pre',
             { className: 'example-code' },
-            '\n            {\n              interval: 3000,\n              duration: 500,\n              animateIn: \'slideInRight\',\n              animateOut: \'slideOutLeft\',\n              nextText: \'Next\',\n              prevText: \'Prev\',\n              autoplay: true,\n              nav: true,\n              dots: false\n            }\n          '
+            '\n            {\n              interval: 3000,\n              duration: 500,\n              animateIn: \'slideInRight\',\n              animateOut: \'slideOutLeft\',\n              nextText: \'Next\',\n              prevText: \'Prev\',\n              autoplay: true,\n              nav: true,\n              dots: false,\n              beforeChange: () => {},\n              afterChange: () => {}\n            }\n          '
           )
         ),
         _react2.default.createElement(
