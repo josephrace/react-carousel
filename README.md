@@ -2,6 +2,8 @@
 
 A simple, configurable React & CSS3 carousel component.
 
+Demo: [https://josephrace.github.io/react-carousel/](https://josephrace.github.io/react-carousel/)
+
 ## Initial Aims
 
 - [x] React `<Carousel />` component to display gallery of images in carousel format
