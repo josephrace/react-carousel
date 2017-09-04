@@ -34,3 +34,38 @@ Given more time I would like to:
 - [ ] Improve Webpack configuration (see [Authoring Libraries](https://webpack.js.org/guides/author-libraries/))
 - [ ] Integrate with Travis CI
 - [ ] Publish to npm
+
+## Usage
+
+Wrap your images inside the `<Carousel />` component.  Configuration options can be passed as props.
+
+```
+<Carousel
+  dots={true}
+  interval={3000}
+>
+  <img src={img1} alt="" />
+  <img src={img2} alt="" />
+  <img src={img3} alt="" />
+</Carousel>
+```
+
+### Options
+
+Property | Type | Default | Description
+-------- | ---- | ------- | -----------
+interval | number | 3000 | Time between slide transitions
+duration | number | 500 | Duration of transition
+animateIn | string | 'slideInRight' | CSS class of incoming transition
+animateOut | string | 'slideOutLeft' | CSS class of outgoing transition
+nextText | string | 'Next' | Text to display for next element
+prevText | string | 'Prev' | Text to display for prev element
+autoplay | boolean | true | Should carousel autoplay
+nav | boolean | true | Should nav next/prev be displayed
+dots | boolean | false | Should dots elements be displayed
+beforeChange | function | undefined | Function to call before transition
+afterChange | function | undefined | Function to call after transition
+
+## Examples
+
+Demo: [https://josephrace.github.io/react-carousel/](https://josephrace.github.io/react-carousel/)
